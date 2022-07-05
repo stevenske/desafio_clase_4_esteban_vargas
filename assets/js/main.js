@@ -1,8 +1,6 @@
 let price = 0
 let discount = 0
-let spain = 1800
-let france = 2200
-let england = 2100
+
 
 let name = prompt("hi!! what's your name?")
 alert(`hi ${name} welcome to TrainTrips!!`)
@@ -18,18 +16,18 @@ function discount10 (a,b){
 while(trip !='esc'){
     switch (trip){
         case 'spain':
-            price = spain
-            discount = discount10(spain,0.10)
+            price = 1800
+            discount = discount10(price,0.10)
             alert(`the price of the trip to ${trip} is $${price} and with the 10% discount the total is ${discount}`)
             break
         case 'france':
-            price = france
-            discount = discount10(france,0.10)
+            price = 2200
+            discount = discount10(price,0.10)
             alert(`the price of the trip to ${trip} is $${price} and with the 10% discount the total is ${discount}`)
             break
             case 'england':
-                price = england
-                discount = discount10(england,0.10)
+                price = 2100
+                discount = discount10(price,0.10)
                 alert(`the price of the trip to ${trip} is $${price} and with the 10% discount the total is ${discount}`)
                 break
             case '':
