@@ -47,7 +47,7 @@ let payment = prompt('Do you want to pay it in installments (yes/no)?')
 if(payment == 'yes'){
     let installments = prompt('In how many installments do you want to pay it?')
     let eachInstallment = discount / installments
-    alert(`they will be installments ${installments} of $${eachInstallment} for the total of $${discount} enjoy the trip and thank you for trusting us!!`)
+    alert(`they will be ${installments} installments of $${eachInstallment} for the total of $${discount} enjoy the trip and thank you for trusting us!!`)
 }else{
     let money = prompt ('how much will you pay?')
 
@@ -59,7 +59,6 @@ while(money < discount){
 let change = money - discount
     alert(`your payment is $${money} and his change is $${change} enjoy the trip and thank you for trusting us!!`)
 }
-
 
 
 
