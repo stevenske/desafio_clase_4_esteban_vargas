@@ -83,7 +83,7 @@ let confirm = prompt('do you want to add a few more? (yes/no)')
 if (confirm == 'yes') {
 
     while (country != 'esc') {
-        country = prompt('what country do you want to trabel with Traintips? (write "esc" if you write all the countries that you want)').toLowerCase()
+        country = prompt('what country do you want to trabel with Traintrips? (write "esc" if you write all the countries that you want)').toLowerCase()
         countries.push(country)
 
     }
