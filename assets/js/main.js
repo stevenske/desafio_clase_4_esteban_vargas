@@ -99,4 +99,5 @@
 // del('esc')
 // console.log(countries)
 
-
+let cardsContainer = document.getElementById('cards__container')
+console.log(cardsContainer)
