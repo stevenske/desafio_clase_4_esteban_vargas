@@ -37,7 +37,7 @@
                 </div>
                 <div id="shopping__logo">
                     <button class="btn btn-train" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <img src="/assets/img/shopping_cart_logo.png" alt="shopping cart logo">
+                        <img src="/assets/img/shopping_cart_logo.png" alt="shopping cart logo"><span id="cart__counter">0</span>
                     </button>
                 </div>
             </div>
@@ -97,12 +97,13 @@
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        <div id="shopping__container" class="offcanvas-body">
+        </div>
+        <div class="offcanvas-footer">
+            <p class="productPrice">Total Price:$<span id="total__price">0</span></p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

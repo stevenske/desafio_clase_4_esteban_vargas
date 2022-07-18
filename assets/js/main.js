@@ -99,7 +99,18 @@
 // del('esc')
 // console.log(countries)
 
+
+
+
+
+
+let shoppingCart = []
+
+
 let cardsContainer = document.getElementById('cards__container')
+let shoppingContainer = document.getElementById('shopping__container')
+let cartCounter = document.getElementById('cart__counter')
+let totalPrice = document.getElementById('total__price')
 
 function showProducts() {
     stockProducts.forEach(item => {
@@ -118,8 +129,34 @@ function showProducts() {
     `
     cardsContainer.appendChild(div)
     })
+    addCart()
+}
+
+showProducts()
+
+function addCart(){
+    let addTrip = prompt('what trip you want?').toLowerCase()
+    let finded = stockProducts.find(e => e.trip.toLowerCase() == addTrip)
+    shoppingCart.push(finded)
+    showShoppingCart(finded)
+    updateCart()
+}
 
 
+function showShoppingCart(finded){
+let div = document.createElement('div')
+div.className = 'productCart'
+div.innerHTML = `
+                <p>${finded.trip}</p>
+                <p>${finded.price}</p>
+                <button></button>
+`
+shoppingContainer.appendChild(div)
 
 }
-showProducts()
+
+function updateCart(){
+    cartCounter.innerText = shoppingCart.length
+    totalPrice.innerText = shoppingCart.reduce((acc, el)=>acc + el.price, 0)
+}
+
