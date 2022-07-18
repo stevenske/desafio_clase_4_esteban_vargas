@@ -35,6 +35,11 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
+                </div>
             </div>
         </nav>
     </header>        
@@ -44,66 +49,6 @@
         </div>
     </div>
     <div id="cards__container" class="container-fluid row">
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div id="cardRome" class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/coliseo_roma.jpg" class="card-img-top rounded zoom" alt="photo of the Colosseum in Rome">
-                <div class="card-body">
-                    <p class="card-title fs-5">Rome</p>
-                    <p class="card-text">Visit the Colosseum in Rome with a direct train trip</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/paris.jpg" class="card-img-top rounded zoom" alt="Tourist photo at the Louvre Pyramid in Paris">
-                <div class="card-body">
-                    <p class="card-title fs-5">Paris</p>
-                    <p class="card-text">Visit the Louvre Pyramid in Paris with a direct train trip</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/amsterdam.jpg" class="card-img-top rounded zoom" alt="amsterdam canals photo">
-                <div class="card-body">
-                    <p class="card-title fs-5">Amsterdam</p>
-                    <p class="card-text">Visit Amsterdam with a direct train trip</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/greece.jpg" class="card-img-top rounded zoom" alt="photo of the island Santorini">
-                <div class="card-body">
-                    <p class="card-title fs-5">Greece</p>
-                    <p class="card-text">Visit the beautiful island Santorini in Greece with a direct train trip and boat</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/london.jpg" class="rounded zoom" alt="photo of the Big Ben in London">
-                <div class="card-body">
-                    <p class="card-title fs-5">London</p>
-                    <p class="card-text">Visit the Big Ben in London with a direct train trip</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center my-3">
-            <div class="card text-center shadow-lg" style="width: 18rem;">
-                <img src="assets/img/spain.jpg" class="card-img-top rounded zoom" alt="photo of the Cathedral Basilica of the Holy Cross and Saint Eulalia">
-                <div class="card-body">
-                    <p class="card-title fs-5">Spain</p>
-                    <p class="card-text">Visit the Metropolitan Cathedral Basilica of the Holy Cross and Saint Eulalia train trip</p>
-                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
-                </div>
-            </div>
-        </div>
     </div>
     <div id="footer" class="bg-gray">
         <footer class="py-3 border-top border-dark">
@@ -147,6 +92,27 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-train" data-bs-dismiss="modal">Close</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
         </div>
     </div>

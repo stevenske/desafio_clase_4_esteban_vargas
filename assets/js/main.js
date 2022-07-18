@@ -100,4 +100,26 @@
 // console.log(countries)
 
 let cardsContainer = document.getElementById('cards__container')
-console.log(cardsContainer)
+
+function showProducts() {
+    stockProducts.forEach(item => {
+        let div = document.createElement('div')
+        div.className = 'col-md-4 d-flex justify-content-center my-3'
+        div.innerHTML = `
+            <div class="card text-center shadow-lg" style="width: 18rem;">
+                <img src="${item.img}" class="card-img-top rounded zoom" alt="photo of the Colosseum in Rome">
+                <div class="card-body">
+                    <p class="card-title fs-5">${item.trip}</p>
+                    <p class="card-text">${item.desc}</p>
+                    <p class="card-text">$${item.price}</p>
+                    <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
+                </div>
+            </div>
+    `
+    cardsContainer.appendChild(div)
+    })
+
+
+
+}
+showProducts()
