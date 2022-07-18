@@ -83,6 +83,12 @@ body {
   color: #90b1f7;
 }
 
+@media all and (max-width: 768px) {
+  #shopping__logo img {
+    width: 30px !important;
+  }
+}
+
 #banner__countries {
   background-image: url(../assets/img/banner_countries.jpg);
   background-repeat: no-repeat;

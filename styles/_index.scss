@@ -52,3 +52,8 @@ body{
 .text-main{
     color: $main_color;
 }
+#shopping__logo img{
+    @media all and (max-width:768px){
+        width: 30px !important;
+    }
+}
