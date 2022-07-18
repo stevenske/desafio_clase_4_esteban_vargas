@@ -69,34 +69,34 @@
 
 
 
-let name = prompt("hi!! what's your name?")
-alert(`hi ${name} welcome to TrainTrips!!`)
-alert(" we are carrying out a poll to our clients to find out where they would like to travel")
+// let name = prompt("hi!! what's your name?")
+// alert(`hi ${name} welcome to TrainTrips!!`)
+// alert(" we are carrying out a poll to our clients to find out where they would like to travel")
 
 
-const countries = []
+// const countries = []
 
-let country = prompt('what country do you want to trabel with Traintips?')
-countries.push(country)
-let confirm = prompt('do you want to add a few more? (yes/no)')
+// let country = prompt('what country do you want to trabel with Traintips?')
+// countries.push(country)
+// let confirm = prompt('do you want to add a few more? (yes/no)')
 
-if (confirm == 'yes') {
+// if (confirm == 'yes') {
 
-    while (country != 'esc') {
-        country = prompt('what country do you want to trabel with Traintrips? (write "esc" if you write all the countries that you want)').toLowerCase()
-        countries.push(country)
+//     while (country != 'esc') {
+//         country = prompt('what country do you want to trabel with Traintrips? (write "esc" if you write all the countries that you want)').toLowerCase()
+//         countries.push(country)
 
-    }
-}
-const del = (countryName) => {
-    let i = countries.indexOf(countryName)
+//     }
+// }
+// const del = (countryName) => {
+//     let i = countries.indexOf(countryName)
 
-    if (i != -1) {
-        countries.splice(i, 1)
-    }
-}
-alert('THANKS YOU SO MUCH FOR COMPLETE THIS POLL')
-del('esc')
-console.log(countries)
+//     if (i != -1) {
+//         countries.splice(i, 1)
+//     }
+// }
+// alert('THANKS YOU SO MUCH FOR COMPLETE THIS POLL')
+// del('esc')
+// console.log(countries)
 
 
