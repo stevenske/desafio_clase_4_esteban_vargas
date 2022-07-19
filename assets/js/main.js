@@ -99,13 +99,7 @@
 // del('esc')
 // console.log(countries)
 
-
-
-
-
-
 let shoppingCart = []
-
 
 let cardsContainer = document.getElementById('cards__container')
 let shoppingContainer = document.getElementById('shopping__container')
@@ -140,16 +134,28 @@ function addCart(){
     shoppingCart.push(finded)
     showShoppingCart(finded)
     updateCart()
-}
 
+    let confirm = prompt('do you want to add a few more? (yes/no)')
+
+    if (confirm == 'yes') {
+
+    while (addTrip != 'esc') {
+        addTrip = prompt('what country do you want to trabel with Traintrips? (write "esc" if you write all the countries that you want)').toLowerCase()
+        finded = stockProducts.find(e => e.trip.toLowerCase() == addTrip)
+        shoppingCart.push(finded)
+        showShoppingCart(finded)
+        updateCart()
+
+    }
+}
+}
 
 function showShoppingCart(finded){
 let div = document.createElement('div')
-div.className = 'productCart'
+div.className = 'productCart d-flex justify-content-evenly border border-train rounded-1 py-2'
 div.innerHTML = `
-                <p>${finded.trip}</p>
-                <p>${finded.price}</p>
-                <button></button>
+                <p class="my-auto">${finded.trip}</p>
+                <p class="my-auto" border-plan>$${finded.price}</p>
 `
 shoppingContainer.appendChild(div)
 
