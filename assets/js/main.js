@@ -152,7 +152,7 @@ function addCart(){
 
 function showShoppingCart(finded){
 let div = document.createElement('div')
-div.className = 'productCart d-flex justify-content-evenly border border-train rounded-1 py-2'
+div.className = 'productCart d-flex justify-content-between border-start border-4 border-danger bg-gray rounded-1 py-2 px-1'
 div.innerHTML = `
                 <p class="my-auto">${finded.trip}</p>
                 <p class="my-auto" border-plan>$${finded.price}</p>
